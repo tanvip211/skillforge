@@ -1,1 +1,36 @@
 <!--Home Page-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SkillForge</title>
+</head>
+<body>
+    <h1>SkillForge</h1>
+
+<form method="POST" action="/generate-roadmap">
+
+    <label>Enter Your Skills:</label>
+    <br><br>
+
+    <textarea name="skills" rows="6" cols="40"></textarea>
+
+    <br><br>
+
+    <label>Select Target Role:</label>
+    <br><br>
+
+    <select name="role">
+        <option>AI Engineer</option>
+        <option>Data Scientist</option>
+        <option>Frontend Developer</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">
+        Generate Roadmap
+    </button>
+
+</form>
+</body>
+</html>

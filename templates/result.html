@@ -1,1 +1,28 @@
 <!--Results Page-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roadmap Result</title>
+</head>
+<body>
+
+    <h1>Your Roadmap</h1>
+
+    <h2>Missing Skills</h2>
+
+    <ul>
+        {% for skill in missing_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Recommended Projects</h2>
+
+    <ul>
+        {% for project in projects %}
+            <li>{{ project }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
